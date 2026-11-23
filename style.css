@@ -1,0 +1,26 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+body { min-height: 100vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #0f172a, #312e81 55%, #6d28d9); padding: 24px 16px; color: white; }
+.container { width: 100%; max-width: 440px; text-align: center; }
+.icon { font-size: 46px; margin-bottom: 10px; }
+h1 { font-size: clamp(23px, 5vw, 29px); letter-spacing: -0.5px; }
+.subtitle { color: #c7d2fe; font-size: 14px; margin: 10px 0 26px; }
+.card { background: rgba(255,255,255,0.1); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2); border-radius: 22px; padding: 26px; box-shadow: 0 20px 45px rgba(0,0,0,0.22); }
+label, .field-label { display: block; text-align: left; font-size: 12px; font-weight: 500; color: #cbd5e1; margin-bottom: 10px; letter-spacing: 1px; }
+input { width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #64748b; background: rgba(15,23,42,.5); color: white; font-size: 26px; outline: none; margin-bottom: 22px; }
+input:focus { border-color: #c4b5fd; box-shadow: 0 0 0 3px rgba(196,181,253,.15); }
+.units { display: flex; gap: 8px; }
+button { font-family: inherit; transition: transform .2s, background .2s, filter .2s; }
+.unit { flex: 1; min-width: 0; padding: 12px 4px; background: rgba(255,255,255,.1); color: white; border: 1px solid rgba(255,255,255,.2); border-radius: 11px; cursor: pointer; font-size: 12px; }
+.unit.active { background: white; color: #312e81; font-weight: 700; }
+.unit:hover { transform: translateY(-2px); }
+.swap { display: block; background: #a78bfa; border: 0; border-radius: 50%; width: 42px; height: 42px; color: #1e1b4b; font-size: 24px; cursor: pointer; margin: 18px auto; }
+.swap:hover { transform: rotate(180deg); }
+.result-box { margin-top: 26px; padding: 27px 15px; border-radius: 16px; background: linear-gradient(135deg, #7c3aed, #4f46e5); }
+.result-label { font-size: 12px; letter-spacing: 1px; color: #e0d7ff; }
+#result { font-size: clamp(29px, 8vw, 41px); margin: 12px 0; overflow-wrap: anywhere; }
+#weather { color: #e0e7ff; font-size: 14px; }
+.reset { margin-top: 20px; width: 100%; padding: 14px; background: white; color: #312e81; border: none; border-radius: 12px; cursor: pointer; font-weight: 700; font-size: 14px; }
+.reset:hover { background: #ddd6fe; }
+.footer { margin-top: 22px; color: #c7d2fe; font-size: 12px; }
+button:focus-visible { outline: 3px solid #fcd34d; outline-offset: 3px; }
+@media (max-width: 360px) { .card { padding: 18px; } .unit { font-size: 11px; } }

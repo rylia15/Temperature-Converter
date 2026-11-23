@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <div class="icon" aria-hidden="true">🌡️</div>
+    <h1>Temperature Converter</h1>
+    <p class="subtitle">Simple, accurate and beautifully designed.</p>
+
+    <section class="card" aria-label="Temperature converter">
+      <label for="temperature">ENTER TEMPERATURE</label>
+      <input type="number" id="temperature" value="25" step="any" placeholder="Enter a temperature">
+
+      <p class="field-label" id="from-label">CONVERT FROM</p>
+      <div class="units" id="fromUnits" role="group" aria-labelledby="from-label">
+        <button type="button" class="unit active" data-unit="C" aria-pressed="true">°C Celsius</button>
+        <button type="button" class="unit" data-unit="F" aria-pressed="false">°F Fahrenheit</button>
+        <button type="button" class="unit" data-unit="K" aria-pressed="false">K Kelvin</button>
+      </div>
+
+      <button type="button" class="swap" id="swap" aria-label="Swap source and target units">⇅</button>
+
+      <p class="field-label" id="to-label">CONVERT TO</p>
+      <div class="units" id="toUnits" role="group" aria-labelledby="to-label">
+        <button type="button" class="unit" data-unit="C" aria-pressed="false">°C Celsius</button>
+        <button type="button" class="unit active" data-unit="F" aria-pressed="true">°F Fahrenheit</button>
+        <button type="button" class="unit" data-unit="K" aria-pressed="false">K Kelvin</button>
+      </div>
+
+      <div class="result-box" aria-live="polite">
+        <p class="result-label">CONVERTED TEMPERATURE</p>
+        <h2 id="result">77.00 °F</h2>
+        <p id="weather">Pleasant weather ☀️</p>
+      </div>
+
+      <button type="button" class="reset" id="reset">↻ Reset Converter</button>
+    </section>
+    <p class="footer">Made with HTML · CSS · JavaScript</p>
+  </main>
+</body>
+</html>
